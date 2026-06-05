@@ -1,5 +1,6 @@
 # Focus Pocus
 A cute and aesthetic focus timer built with HTML,CSS and JavaScript featuring custom themes.
+Focus Pocus : https://focuspocustimer.netlify.app/
 
 ## Features
 1. Offers multiple themes - (Love,Moon,Cloud,Tree)
@@ -16,6 +17,9 @@ A cute and aesthetic focus timer built with HTML,CSS and JavaScript featuring cu
 2. Start the timer.
 3. Switch on/off the background music from settings.
 4. Pause or end the timer as you want.
+
+## ScreenShots
+
 
 ## Built With
 - HTML
