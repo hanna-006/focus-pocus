@@ -240,6 +240,9 @@ body{
     text-align:center;
 }
 @media (max-width: 768px){
+    body{
+        text-align:center;
+    }
     h1{
         font-size:70px;
     }
@@ -264,6 +267,9 @@ body{
     }
 }
 @media (max-width:480px){
+    body{
+        text-align:center;
+    }
     h1{
         font-size:40px;
     }
