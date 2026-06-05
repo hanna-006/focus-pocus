@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Focus Pocus!</title>
+        <link rel="stylesheet" href="front.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    </head>
+    <body class="pastel">
+        <h1>Focus Pocus</h1>
+        <p> Select Time to Focus</p>
+        <button class="settings-btn">
+             <i class="fa-solid fa-gear" style="color: rgb(202, 190, 238);"></i>
+        </button>
+        <div class="theme-btns">
+            <button class="themebt" id="pastel">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <button class="themebt" id="dark">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="themebt" id="cloud">
+                <i class="fa-solid fa-cloud"></i>
+            </button>
+            <button class="themebt" id="tree">
+                <i class="fa-solid fa-tree"></i>
+            </button>
+        </div>
+        <div class="settings-drpdwn" id="settings-drpdwn">
+            <div class="sound-option">
+                <i class="fa-solid fa-volume-up" style="color: rgb(202, 190, 238);" id="sound-on"></i>
+                <i class="fa-solid fa-volume-xmark" style="color: rgb(202, 190, 238); display: none;" id="sound-off"></i>
+            <label class="switch">
+                <input type="checkbox" id="sound-tgl" checked>
+                <span class="slider-tgl"></span>
+            </label>    
+            </div>
+        </div>
+        <input type="range" min="5" max="60" step="5" value="25">
+        <p id="slider-value">25 min</p>
+        <div class="circle-progress">
+            <svg id="progress-svg" width="200" height="200">
+                <circle class="circle-bg" cx="100" cy="100" r="80"/>
+                <circle class="circle-fill" id="circle-fill" cx="100" cy="100" r="80"/>
+            </svg>
+        </div>
+        <p> Click me to start focusing (^///^)</p>
+        <button class="start-button"> Start Timer</button>
+        <button class="pause-button"> Pause</button>
+        <button class="end-button"> End </button>
+        <div id="particles"></div>
+        <audio id="bg-music" src="focuspocussound.mp3" loop></audio>
+        <audio id="comp-sound" src="compsound.mp3"></audio>
+        <script src="main.js"></script>
+    </body>
+</html>
